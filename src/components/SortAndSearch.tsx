@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './SortAndSearch.css';
 
-// Definiera typen för objekt i listan
+
 interface Film {
     id: string;
     title: string;
@@ -9,7 +9,7 @@ interface Film {
     release_date: string;
 }
 
-// Props för komponenten
+
 interface SortAndSearchProps {
     items: Film[];
 }
@@ -19,13 +19,13 @@ const SortAndSearch: React.FC<SortAndSearchProps> = ({ items }) => {
     const [sortKey, setSortKey] = useState<keyof Film>('title');
     const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
     
-    // Sökfunktion
+
     const filteredItems = items.filter(item =>
         item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         item.release_date.toLowerCase().includes(searchTerm.toLowerCase())
     );
     
-    // Sorteringsfunktion
+
     const sortedItems = [...filteredItems].sort((a, b) => {
         const aValue = a[sortKey];
         const bValue = b[sortKey];
@@ -41,7 +41,7 @@ const SortAndSearch: React.FC<SortAndSearchProps> = ({ items }) => {
         return 0;
     });
     
-    // Hantera ändring av sortering
+
     const handleSort = (key: keyof Film) => {
         if (sortKey === key) {
             setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
@@ -53,7 +53,7 @@ const SortAndSearch: React.FC<SortAndSearchProps> = ({ items }) => {
     
     return (
         <div className="sort-and-search-container">
-        {/* Sökfält */}
+
         <div className="search-container">
         <input
         type="text"
@@ -64,7 +64,7 @@ const SortAndSearch: React.FC<SortAndSearchProps> = ({ items }) => {
         />
         </div>
         
-        {/* Sorteringsknappar */}
+
         <div className="sort-buttons">
         
         <button
@@ -83,7 +83,7 @@ const SortAndSearch: React.FC<SortAndSearchProps> = ({ items }) => {
         
         </div>
         
-        {/* Lista med objekt */}
+
         <div className="items-grid">
         {sortedItems.length > 0 ? (
             sortedItems.map(item => (
