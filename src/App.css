@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item-card {
+    display: flex;
+    flex-direction: column;
+  background: #dce2fb;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+.item-image {
+  height: 32em;
+  width: 20em;
+  margin-right: 1em;
+}
+
+.rightside-descript {
+    display: flex;
+    flex-direction: row;
+}
+
+.release {
+    margin-top: 2em;
+    font-weight: bold;
+}
+

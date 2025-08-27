@@ -1,13 +1,6 @@
 import React, { useState } from 'react';
 import './SortAndSearch.css';
-
-
-interface Film {
-    id: string;
-    title: string;
-    description: string;
-    release_date: string;
-}
+import type { Film } from '../data/filmInterface';
 
 
 interface SortAndSearchProps {
