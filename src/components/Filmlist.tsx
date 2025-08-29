@@ -17,7 +17,7 @@ export default function FilmList() {
   if (loading) return <p>Loading...</p>;
 
   return (
-    <div>
+    <div className="layout">
       {films.map((film) => (
         <FilmCard key={film.id} film={film} />
       ))}
