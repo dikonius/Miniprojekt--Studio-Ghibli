@@ -20,7 +20,7 @@ export default function FilmCard({ film }: FilmCardProps) {
         />
           <div className="paragraph-container">
             <p>{film.description}</p>
-            <p className="release">Release date: {film.release_date}</p>
+            <p className="release">Release year: {film.release_date}</p>
           </div>
         
         </div>
