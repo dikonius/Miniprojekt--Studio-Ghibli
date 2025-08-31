@@ -4,7 +4,7 @@ import type { Film } from '../data/filmInterface';
 import { getFilms } from '../data/filmApi';
 import FilmCard from './FilmCard';
 import SearchBar from './SearchBar';
-import SortButtons from './SOrtButtons';
+import SortButtons from './SortButtonss';
 import { filterFilms, sortFilms } from '../data/utils';
 
 export default function SortAndSearch() {
@@ -50,5 +50,6 @@ export default function SortAndSearch() {
         )}
       </div>
     </div>
+
   );
 }
