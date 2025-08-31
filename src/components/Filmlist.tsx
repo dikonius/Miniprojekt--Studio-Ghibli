@@ -36,7 +36,7 @@ export default function SortAndSearch() {
   };
 
   return (
-    <div className="sort-and-search-container">
+    <div className="sort-search-container">
       <SearchBar searchTerm={searchTerm} onSearch={setSearchTerm} />
       <SortButtons sortKey={sortKey} sortOrder={sortOrder} onSort={handleSort} />
 
@@ -46,7 +46,7 @@ export default function SortAndSearch() {
             <FilmCard key={item.id} film={item} />
           ))
         ) : (
-          <p className="no-results">No results found.</p>
+          <h3 className="no-results">No results found.</h3>
         )}
       </div>
     </div>
