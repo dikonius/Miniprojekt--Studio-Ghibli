@@ -8,6 +8,7 @@ h1 {
   color: white;
   text-align: center;
   font-weight: bold;
+  font-size: 2.5em;
   margin: 1em;
 }
 
@@ -47,6 +48,7 @@ h2 {
   height: 380px;
   width: 310px;
   margin-right: 1em;
+  border-radius: 12px;
 }
 
 .rightside-descript {
