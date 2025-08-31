@@ -1,11 +1,12 @@
 import './App.css'
-import FilmList from './components/Filmlist'
+import SortAndSearch from './components/TheFilmList'
+
 
 function App() {
   return (
     <main>
       <h1>Ghibli Studio Film Library</h1>
-      <FilmList />
+      <SortAndSearch />
     </main>
   )
 }
